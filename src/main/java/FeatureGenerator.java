@@ -65,6 +65,7 @@ public class FeatureGenerator {
 
         // Get non-answers.
         for (List<Double> scoreFeatures : messageFeatureMap.values()) {
+            scoreFeatures.add((double) 0f);
             scoredFeaturesList.add(scoreFeatures);
         }
 
